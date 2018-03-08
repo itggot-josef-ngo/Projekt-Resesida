@@ -3,6 +3,7 @@
 body {
 	margin:0px;
 	padding:0px;
+	color:white;
 }
 
 .container {
@@ -15,16 +16,10 @@ body {
 	grid-row-gap:0px;
 }
 
-header {
-	background-color:red;
-	grid-column:span 4;
-	grid-row:span 2;
-	display:grid;
-	grid-template-columns:inherit;
-}
 
 h1 {
 	font-family:arial;
+	color:grey;
 	grid-column:2/4;
 	margin:auto;
 	font-size:7.5vw;
@@ -32,13 +27,13 @@ h1 {
 
 .menu-container {
 	margin:0px;
-	grid-column: span 4;
-	grid-row:span 1;
-	background-color:crimson;
+	background-color:#003354;
+	position:fixed;
 	display:grid;
 	grid-template-columns:inherit;
 	grid-template-rows:2;
 	width:100vw;
+	transition:0.5s;
 }
 
 .material-icons.hamburger {
@@ -47,15 +42,51 @@ h1 {
 	grid-column:span 1;
 	grid-row:span 1;
 	font-size:2em;
+	color:white;
 }
 
 .menu {
 	position:absolute;
+	margin-top:0vh;
 	height:110vh;
-	width:50vw;
-	background-color:white;
+	width:0;
+	opacity:0.9;
+	transition:0.4s;
+	padding-top:60px;
+	background-color:#003354;
+}
+
+.menu a {
+	color:white;
+	transition:0.3s;
 	display:none;
+}
+
+.show {
+	width:100vw;
+	display:block;
+}
+
+.hide {
+	display:none;
+}
 
 
+.fade {
+	background-color:rgb(100,100,100);
+	padding:0px;
+	margin:0px;
+}
+
+
+.close {
+	color:grey;
+	font-size:10em;
+}
+
+main > p {
+	margin-top:10vh;
+	margin-left:20vh;
+}
 
 }
