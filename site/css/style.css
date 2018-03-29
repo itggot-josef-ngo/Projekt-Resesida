@@ -36,7 +36,6 @@ h1 {
 	grid-template-rows:2;
 	grid-row-gap:0px;
 	width:100vw;
-	transition:0.5s;
 }
 
 .material-icons.hamburger {
@@ -51,36 +50,32 @@ h1 {
 
 .menu {
 	position:absolute;
+	opacity:0;
 	margin-top:0vh;
-	height:110vh;
+	height:125vh;
 	width:0;
-	opacity:1;
-	transition:0.4s;
+	transition:0.7s;
 	padding-top:60px;
 	background-color:#003354;
 }
 
 .menu a {
 	color:white;
-	margin:auto;
 }
 
 .show {
 	width:100vw;
+	display:block;
+	opacity:0.9;
+}
+
+.display {
 	display:block;
 }
 
 .hide {
 	display:none;
 }
-
-
-.fade {
-	background-color:rgb(100,100,100);
-	padding:0px;
-	margin:0px;
-}
-
 
 .close {
 	color:white;
@@ -122,6 +117,19 @@ main > p {
 .bothalf h1 {
 	margin-top:30vh;
 	margin-left:40vw;
+}
+
+a {
+	text-decoration-line:none;
+	text-decoration-color:none;
+	text-decoration-style:none;
+	color:white;
+	font-family:arial;
+}
+
+h2 {
+	display:none;
+	margin-left:5vw;
 }
 
 
