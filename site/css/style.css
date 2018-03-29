@@ -90,12 +90,17 @@ main > p {
 	margin-top: 7.5vh;
 	grid-column:span 4;
 	grid-row:1/10;
-	background-color:white;
 	width:100vw;
 	height:70vh;
 	border-width:2vw;
 	border-radius:1vw;
 	border-color:black;
+}
+
+.picture {
+	background-image:url("..img/aus.png") no-repeat center center fixed;
+	width:100vw;
+	height:65vh;
 }
 
 .tophalf h1 {
